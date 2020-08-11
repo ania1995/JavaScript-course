@@ -58,3 +58,18 @@ newTh.appendChild(newA);
 newA.innerHTML = "New link"
 
 
+//Removing Elements from the DOM
+
+var parent =  document.getElementById("navnav").getElementsByTagName("ul")[0];
+var child = parent.getElementsByTagName("li")[0];
+
+var removed = parent.removeChild(child);                       //usuwanie
+var append = parent.appendChild(removed);                      //dodawanie
+parent.removeChild(parent.getElementsByTagName("li")[1]);     //usuwanie bezpośrednie
+
+
+
+
+
+
+
