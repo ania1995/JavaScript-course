@@ -8,22 +8,18 @@
 // && and
 // || or
 
-var a = 'I\'m a "fun" string!';
+var str = "hello, world!";
 
-document.write(a + "<br>");
+var str2 = str.slice(2, 9);
+document.write(str2 + "<br>");
 
-document.write(a.length +"<br>");
+var str3 = str.slice(2);
+document.write(str3 + "<br>");
 
-document.write(a.toUpperCase()+ "<br>");
-document.write(a.toLowerCase() + "<br>");
-document.write(a.indexOf("") + "<br>");
+var tags = " meat, ham, salami, pork, beef, chicken";
+var tagsArray = tags.split(",");
 
-if(a.indexOf("k") === -1){
-    document.write("There is no 'k' string" + "<br>");
+
+for (i = 0; i < tagsArray.length; i++) {
+    document.write("the " + (i + 1) + " world from array is" + tagsArray[i] + "<br>");
 }
-
-var string1 = "abc";
-var string2 = "bcd";
-
-document.write(string1===string2 + "<br>");
-
