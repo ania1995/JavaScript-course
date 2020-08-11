@@ -8,16 +8,16 @@
 // && and
 // || or
 
-/*
-for ( age = 5; age < 10 ; age++){
- document.write("You are under 10! You are: " + age + '<br>')
-}
-document.write("You are  10! <br>");
-*/
 
-var links = document.getElementsByTagName("a");
+for ( i =0; i < 10 ; i++){
 
-for ( i =0; i < links.length ; i++){
-    document.write("this is link numer " + (i+1) + '<br>');
+    if( i === 5 || i ===3){ 
+        continue;               // skip code in loop when i egual to 3 or 5
+    }
+    document.write(i + "<br>");
+
+    if( i===7){
+        break;
+    }
    }
-   document.write(" all links now looped");
+   document.write("I have broken out of loop")
