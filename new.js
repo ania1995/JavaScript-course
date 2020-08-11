@@ -15,12 +15,12 @@ var myBody = document.getElementsByTagName("body");
 
 
 //Change Text Method
-var myTitle = document.getElementById ("p");
+var myTitle = document.getElementById("p");
 myTitle.textContent = "Ababababab"
 
 
 //Get Element Attributes
-var link =document.getElementById("test");
+var link = document.getElementById("test");
 var href_link = link.getAttribute("href");      //"https://www.lasy.gov.pl/pl"
 var class_link = link.getAttribute("class");    //newClass
 
@@ -45,5 +45,16 @@ title.style.left = "40px";
 title.style.top = "20px";
 title.style.color = "red";
 title.style.backgroundColor = "blue";
+
+//Adding elements to the DOM
+
+var newTh = document.createElement("th");
+var newA = document.createElement("a");
+
+var getTable = document.getElementsByTagName("table")[0];
+getTable.appendChild(newTh);
+newTh.appendChild(newA);
+
+newA.innerHTML = "New link"
 
 
