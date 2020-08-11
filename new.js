@@ -114,21 +114,36 @@ function setUpEvents() {
 
     function changeColor() {
 
-        if(counter >= colors.length){
+        if (counter >= colors.length) {
             counter = 0;
         }
         colorChanger.style.background = colors[counter];
         counter++;
-    
+
     }
 
     var myTimer = setInterval(changeColor, 3000);
-    
-    colorChanger.onclick = function(){
+
+    colorChanger.onclick = function () {
         clearInterval(myTimer);
         colorChanger.innerHTML = "Timer stopped";
     }
+
+    //fun with FORMS
+
+    var myForm = document.forms.myForm;
+    myForm.name.value;
+    myForm.colour.value;
+
+    myForm.name.onfocus = function(){
+        myForm.name.style.border = "4px solid pink";
+    }
+
+    myForm.name.onblur = function(){
+        myForm.name.style.border = "none";
+    }
 }
+
 
 window.onload = function () {
 
