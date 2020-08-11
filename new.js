@@ -8,16 +8,12 @@
 // && and
 // || or
 
-var a = 5;
+var a = "apple";
 var b = 5;
-var c = "5";
 
-document.write( a + b + "<br> type of a+b is: " + typeof(a + b) + "<br><br>");
-document.write( a + c + "<br> type of a+c is: " + typeof(a + c) + "<br><br>");
-
-document.write( Math.round(7.5) + "<br>");
-document.write( Math.round(7.4) + "<br>");
-document.write( Math.floor(7.5) + "<br>");
-document.write( Math.ceil(7.5) + "<br>");
-document.write( Math.max(1 , 5 , 9 , 4 , 3) + "<br>");
-document.write( Math.PI + "<br>");
+if (isNaN(a)) {              //function checking variable if it's NaN
+    document.write(" a isn't a number <br>");
+}
+else {
+    document.write(" a is a number <br>");
+}
