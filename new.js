@@ -8,12 +8,22 @@
 // && and
 // || or
 
-var a = "apple";
-var b = 5;
+var a = 'I\'m a "fun" string!';
 
-if (isNaN(a)) {              //function checking variable if it's NaN
-    document.write(" a isn't a number <br>");
+document.write(a + "<br>");
+
+document.write(a.length +"<br>");
+
+document.write(a.toUpperCase()+ "<br>");
+document.write(a.toLowerCase() + "<br>");
+document.write(a.indexOf("") + "<br>");
+
+if(a.indexOf("k") === -1){
+    document.write("There is no 'k' string" + "<br>");
 }
-else {
-    document.write(" a is a number <br>");
-}
+
+var string1 = "abc";
+var string2 = "bcd";
+
+document.write(string1===string2 + "<br>");
+
