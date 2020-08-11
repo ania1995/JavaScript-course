@@ -8,38 +8,33 @@
 // && and
 // || or
 
-/*
-var myCar = new Object();
-myCar.maxSpeed = 50;
-myCar.driver = "Ania";
 
-document.write(myCar.maxSpeed + "<br>" + myCar.driver + "<br>");
+var Car = function (maxSpeed, driver) {
 
-myCar.drive = function () {
-    document.write("now driving myCar");
+    this.maxSpeed = maxSpeed;
+    this.driver = driver;
+    this.drive = function (speed, time) {
+        document.write(speed / time + " km/h. <br>");
+    };
+    this.logDriver = function () {
+        document.write("name of driver is " + this.driver + "<br>");
+    };
+
 }
 
-myCar.drive();
+var myCar = new Car(80, "Ania");
+var myCar2 = new Car(30, "Lukasz");
+var myCar3 = new Car(70, "Zbyszek");
+var myCar4 = new Car(120, "Stefan");
+var myCar5 = new Car(500, "Zuzka");
 
-document.write("<br>" + myCar + "<br>");
-*/
+myCar.drive (40,5);
+myCar2.drive (60,2);
+myCar2.drive (10,4);
+myCar4.drive (120,1);
+myCar5.drive (9,2);
 
-var myCar2 = {
-
-    maxSpeed: 40,
-    driver: "someone",
-    drive: function (speed, time) {
-        document.write("now myCar2 drive with " + speed / time + " km/h. <br>");
-    },
-    logDriver: function(){
-        console.log("name of driver is " + this.driver);
-    }
-};
-
-myCar2.logDriver();
-document.write(myCar2.maxSpeed + "<br>" + myCar2.driver + "<br>");
-myCar2.drive(40, 1);
-
+myCar4.logDriver();
 
 
 
