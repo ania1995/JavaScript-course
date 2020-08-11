@@ -8,16 +8,9 @@
 // && and
 // || or
 
+var links = document.getElementsByTagName("a");
 
-for ( i =0; i < 10 ; i++){
+for(i = 0; i < links.length; i++){
+    links[i].className = "link-" + i;
+}
 
-    if( i === 5 || i ===3){ 
-        continue;               // skip code in loop when i egual to 3 or 5
-    }
-    document.write(i + "<br>");
-
-    if( i===7){
-        break;
-    }
-   }
-   document.write("I have broken out of loop")
