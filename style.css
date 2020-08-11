@@ -1,6 +1,6 @@
 body
 {
-    background: url(#);
+    background: #eee;
     background-size:cover;
 }
 
@@ -56,4 +56,47 @@ td
 	border: 1px solid black;
 	width:165px;
 	font-size: 14px;
+}
+
+#content{
+    width: 400px;
+    background: #fff;
+    padding: 20px;
+    padding-top: 0;
+    font-family: calibri;
+    font-size: 18px;
+    color: #444;
+    margin: 0 auto;
+
+    max-height: 270px;
+    overflow: hidden;
+
+    /*Set transitions up*/
+    -webkit-transition: max-height 0.7s;
+    -moz-transition: max-height 0.7s;
+    transition: max-height 0.7s;
+}
+
+#content.open{
+    max-height: 1000px;
+
+        /*Set transitions up*/
+        -webkit-transition: max-height 0.7s;
+        -moz-transition: max-height 0.7s;
+        transition: max-height 0.7s;
+}
+
+#show-more{
+    background: #1594e5;
+    color: #fff;
+    font-family: calibri;
+    display: block;
+    width: 140px;
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-style: italic;
+
 }
