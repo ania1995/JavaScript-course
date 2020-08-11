@@ -142,6 +142,19 @@ function setUpEvents() {
     myForm.name.onblur = function(){
         myForm.name.style.border = "none";
     }
+
+    var myMessage2 = document.getElementById("message2");
+
+    myForm.onsubmit =  function(){
+
+        if(myForm.name.value == ""){
+            message2.innerHTML = "Plase enter a name";
+            return false;
+        }else{
+            message2.innerHTML = "";
+            return true;
+        };
+    };
 }
 
 
