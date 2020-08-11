@@ -8,30 +8,33 @@
 // && and
 // || or
 
-var myArray = [];
-myArray[0] = 25;
-myArray[1] = true;
-myArray[2] = 10;
-myArray[3] = "hello";
+var myCar = new Object();
+myCar.maxSpeed = 50;
+myCar.driver = "Ania";
 
-document.write(myArray + "<br>");
-document.write(typeof(myArray)+ "<br>");
+document.write(myCar.maxSpeed + "<br>" + myCar.driver + "<br>");
 
-var array2 = [10, true, false, "string"];
+myCar.drive = function () {
+    document.write("now driving myCar");
+}
 
-document.write(array2 + "<br>");
-document.write(typeof(array2)+ "<br>");
+myCar.drive();
 
-var array3 = new Array(5); // create array with defined  numbers of elements
+document.write("<br>" + myCar + "<br>");
 
-//checking lenght of arrays
-document.write(array2.length+ "<br>");
-document.write(array3.length+ "<br>");
+var myCar2 = {
 
-//sort arrays
-document.write(myArray.sort()+ "<br>");
-document.write(array2.sort()+ "<br>");
+    maxSpeed: 40,
+    driver: "someone",
+    drive: function (speed, time) {
+        document.write("now myCar2 drive with " + speed / time + " km/h. <br>");
+    }
 
-//sort and revers arrays
-document.write(myArray.reverse()+ "<br>");
-document.write(array2.reverse()+ "<br>");
+};
+
+document.write(myCar2.maxSpeed + "<br>" + myCar2.driver + "<br>");
+myCar2.drive(40, 1);
+
+
+
+
