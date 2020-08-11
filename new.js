@@ -8,11 +8,10 @@
 // && and
 // || or
 
-var myAge = 25;
+var age = 5;
 
-if (myAge >= 18 && myAge <= 30){
-    document.write("you can go to holiday");
+while(age < 10){
+    document.write("you are under 10! You are: " + age + "<br>");
+    age ++;
 }
-else{
-    document.write("you can't go to holiday!");
-}
+document.write("Now you are 10! :)");
