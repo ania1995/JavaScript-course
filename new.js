@@ -8,7 +8,7 @@
 // && and
 // || or
 
-
+/*
 var Car = function (maxSpeed, driver) {
 
     this.maxSpeed = maxSpeed;
@@ -35,6 +35,22 @@ myCar4.drive (120,1);
 myCar5.drive (9,2);
 
 myCar4.logDriver();
+*/
 
+var myDate = new Date();
+document.write(myDate + "<br>");
+
+var myPastDate = new Date(1545, 11, 2, 10, 30, 15);
+var myFutureDate = new Date(2095, 3, 26, 10, 30, 15);
+
+document.write(myPastDate+ "<br>");
+document.write(myFutureDate+ "<br>");
+
+document.write(myDate.getMonth() + "<br>");          // 0-11
+document.write(myDate.getFullYear() + "<br>");      //YYYY
+document.write(myDate.getDay() + "<br>");           // 1 -31
+document.write(myDate.getHours() + "<br>");         // 0 -23
+document.write(myDate.getTime() + "<br>");          // get milisecends since 1st Jan 1970
+//getTime is use to compare date!!!
 
 
