@@ -10,8 +10,8 @@
 
 function getAverage(a, b, c){
     var avarage = (a+b+c)/3
-    document.write("avarage is: " + avarage);
     return avarage;
 }
 
 var myReseult = getAverage(4 ,6, 19.20);
+document.write("avarage is: " + myReseult);
