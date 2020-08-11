@@ -6,4 +6,4 @@ var myVariabe; //undefined
 myVariabe = 10;
 var myVar ="hello"; //undefined
 
-
+myVariabe = myVariabe + "hello"; // "10hello"
