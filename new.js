@@ -8,18 +8,30 @@
 // && and
 // || or
 
-var str = "hello, world!";
+var myArray = [];
+myArray[0] = 25;
+myArray[1] = true;
+myArray[2] = 10;
+myArray[3] = "hello";
 
-var str2 = str.slice(2, 9);
-document.write(str2 + "<br>");
+document.write(myArray + "<br>");
+document.write(typeof(myArray)+ "<br>");
 
-var str3 = str.slice(2);
-document.write(str3 + "<br>");
+var array2 = [10, true, false, "string"];
 
-var tags = " meat, ham, salami, pork, beef, chicken";
-var tagsArray = tags.split(",");
+document.write(array2 + "<br>");
+document.write(typeof(array2)+ "<br>");
 
+var array3 = new Array(5); // create array with defined  numbers of elements
 
-for (i = 0; i < tagsArray.length; i++) {
-    document.write("the " + (i + 1) + " world from array is" + tagsArray[i] + "<br>");
-}
+//checking lenght of arrays
+document.write(array2.length+ "<br>");
+document.write(array3.length+ "<br>");
+
+//sort arrays
+document.write(myArray.sort()+ "<br>");
+document.write(array2.sort()+ "<br>");
+
+//sort and revers arrays
+document.write(myArray.reverse()+ "<br>");
+document.write(array2.reverse()+ "<br>");
