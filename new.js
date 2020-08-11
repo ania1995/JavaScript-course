@@ -35,3 +35,15 @@ var alt_link = link.getAttribute("alt");        //"hello"
 link.className;                                 //"pie"
 link.className = "apple";                       //"apple"
 
+
+//Changing Style
+var title = document.getElementById("test2");
+title.setAttribute("style", "color: black; font-size: 48px ");
+
+//Adding properties for style
+title.style.left = "40px";
+title.style.top = "20px";
+title.style.color = "red";
+title.style.backgroundColor = "blue";
+
+
