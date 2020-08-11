@@ -8,6 +8,7 @@
 // && and
 // || or
 
+/*
 var myCar = new Object();
 myCar.maxSpeed = 50;
 myCar.driver = "Ania";
@@ -21,6 +22,7 @@ myCar.drive = function () {
 myCar.drive();
 
 document.write("<br>" + myCar + "<br>");
+*/
 
 var myCar2 = {
 
@@ -28,10 +30,13 @@ var myCar2 = {
     driver: "someone",
     drive: function (speed, time) {
         document.write("now myCar2 drive with " + speed / time + " km/h. <br>");
+    },
+    logDriver: function(){
+        console.log("name of driver is " + this.driver);
     }
-
 };
 
+myCar2.logDriver();
 document.write(myCar2.maxSpeed + "<br>" + myCar2.driver + "<br>");
 myCar2.drive(40, 1);
 
