@@ -10,15 +10,10 @@
 
 
 
-// First Method 
-
-var myContentDivs = document.getElementsByClassName("content");
-
-// Secend Method
-var myH2 = document.getElementsByTagName("h2");
-var myId = document.getElementById("page-title");
-
-myH2[0].innerHTML = "Zmiana tekstu";
+var myBody = document.getElementsByTagName("body");
+//myBody[0].innerHTML = "<p>I am paragraph</p>"
 
 
-
+//Change Text Method
+var myTitle = document.getElementById ("p");
+myTitle.textContent = "Ababababab"
