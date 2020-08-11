@@ -60,16 +60,25 @@ newA.innerHTML = "New link"
 
 //Removing Elements from the DOM
 
-var parent =  document.getElementById("navnav").getElementsByTagName("ul")[0];
+var parent = document.getElementById("navnav").getElementsByTagName("ul")[0];
 var child = parent.getElementsByTagName("li")[0];
 
 var removed = parent.removeChild(child);                       //usuwanie
 var append = parent.appendChild(removed);                      //dodawanie
 parent.removeChild(parent.getElementsByTagName("li")[1]);     //usuwanie bezpośrednie
 
+//Events 
 
+var event = document.getElementById("test2");
+event.onclick = function () {
+    alert("hello!");
+};
 
+event.onmouseover = function(){
+    alert("you hovered your mouse over me")
+}
 
+//addEventListener();
 
 
 
