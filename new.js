@@ -135,26 +135,42 @@ function setUpEvents() {
     myForm.name.value;
     myForm.colour.value;
 
-    myForm.name.onfocus = function(){
+    myForm.name.onfocus = function () {
         myForm.name.style.border = "4px solid pink";
     }
 
-    myForm.name.onblur = function(){
+    myForm.name.onblur = function () {
         myForm.name.style.border = "none";
     }
 
     var myMessage2 = document.getElementById("message2");
 
-    myForm.onsubmit =  function(){
+    myForm.onsubmit = function () {
 
-        if(myForm.name.value == ""){
+        if (myForm.name.value == "") {
             message2.innerHTML = "Plase enter a name";
             return false;
-        }else{
+        } else {
             message2.innerHTML = "";
             return true;
         };
     };
+
+    // JavaSript vs. jQuery libraries
+    var myPar = document.getElementById("content2").getElementsByTagName("p")[5];
+    //console.log(myPar);         //<p>grab me</p>
+
+    var myPar2 = $("#content2 p:last-child");
+    //console.log(myPar2);
+
+    myPar2.addClass ("test");
+    myPar2.addClass ("test2");
+    myPar2.removeClass("test");
+    myPar2.fadeOut();
+    myPar2.fadeIn();
+    myPar2.css({position:"relative", color: "red"});
+    myPar2.animate({left: "150px"});
+
 }
 
 
